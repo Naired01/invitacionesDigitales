@@ -1,0 +1,208 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #272224;
+    color: #ffffff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: auto;
+    gap: 10px;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: 'montserrat';
+    src: url('/resourses/fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'montserrat-semi-bold';
+    src: url('/resourses/fonts/Montserrat-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'montaga';
+    src: url('/resourses/fonts/Montaga/Montaga-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'odor-mean-chey';
+    src: url('/resourses/fonts/Odor_Mean_Chey/OdorMeanChey-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'oleo-script-bold';
+    src: url('/resourses/fonts/Oleo_Script_Swash_Caps/OleoScriptSwashCaps-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'oleo-script';
+    src: url('/resourses/fonts/Oleo_Script_Swash_Caps/OleoScriptSwashCaps-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Kunstler';
+    src: url('/resourses/fonts/KUNSTLER.TTF') format('truetype');
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 800px;
+}
+
+/* TOP SECTION */
+
+.top img {
+    width: 100%;
+    height: auto;
+}
+
+.top h1 {
+    top: -60px;
+    margin: 0;
+    position: inherit;
+    font-size: 108px;
+    font-family: 'Kunstler', sans-serif;
+}
+
+/* Mis16 SECTION */
+
+.decoration {
+    margin: 40px 0;
+}
+
+.decoration .mis16 {
+    width: 100%;
+    height: auto;
+}
+
+.decoration .ball1 {
+    position: absolute;
+    top: -50%;
+    left: 0;
+    width: 7rem;
+}
+
+.decoration .ball2 {
+    position: absolute;
+    bottom: -50%;
+    right: 0;
+    width: 7rem;
+}
+
+/* AUDIO SECTION */
+
+.audio p {
+    font-family: 'oleo-script', sans-serif;
+    font-size: 18px;
+    margin: 0;
+    color: #777274;
+}
+
+.audio .controls {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* TEXT SECTION */
+
+.content {
+    position: relative;
+    background-image: url('/resourses/STARS.png');
+    background-size: cover;
+    
+}
+
+.stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150%;
+    height: auto;
+}
+
+.galaxy {
+    position: relative;
+    margin: 80px 0;
+}
+
+.galaxy p {
+    font-family: 'montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    margin: 80px 30px;
+    color: #A4A4A4;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.galaxy .date {
+    width: 100%;
+    height: auto;
+}
+
+/*  COUNTDOWN */
+
+.countdown {
+    position: relative;
+    margin: 50px 0;
+}
+
+.countdown img {
+    width: 100%;
+    height: auto;
+}
+
+/* CARROUSEL */
+
+.carrousel {
+    width: 100%;
+    height: auto;
+    background-color: #201c1d;
+    padding: 50px 0;
+}
+
+.carrousel h3 {
+    font-family: 'oleo-script', sans-serif;
+    font-size: 24px;
+    margin: 0;
+    color: #E99FBE;
+}
+
+.carrousel-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 15px;
+    overflow: auto;
+    margin: 20px;
+}
+
+.carrousel-item {
+    background-color: #fff;
+    color: #000;
+    padding: 25px 25px 70px 25px;
+}
+
+.carrousel-item:first-child {
+    margin-left: 20px;
+}
+
+.carrousel-item img {
+    width: 250px;
+    height: auto;
+}
