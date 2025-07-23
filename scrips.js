@@ -6,6 +6,12 @@ const audio = document.getElementById('background-music');
 let statusMussic = false;
 
 const audioControl = () => {
+    // Load the audio if clicked for the first time
+    if (audio.src === '') {
+        audio.src = 'http://mass.ath.cx/go/audio16';
+    }
+
+    // Toggle play/pause state
     if (statusMussic) {
         audio.pause();
         statusMussic = false;
