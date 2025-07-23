@@ -18,36 +18,36 @@ body {
 
 @font-face {
     font-family: 'montserrat';
-    src: url('/invitacionesDigitales/resourses/fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+    src: url('/resourses/fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'montserrat-semi-bold';
-    src: url('/invitacionesDigitales/resourses/fonts/Montserrat-SemiBold.ttf') format('truetype');
+    src: url('/resourses/fonts/Montserrat-SemiBold.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'montaga';
-    src: url('/invitacionesDigitales/resourses/fonts/Montaga/Montaga-Regular.ttf') format('truetype');
+    src: url('/resourses/fonts/Montaga/Montaga-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'odor-mean-chey';
-    src: url('/invitacionesDigitales/resourses/fonts/Odor_Mean_Chey/OdorMeanChey-Regular.ttf') format('truetype');
+    src: url('/resourses/fonts/Odor_Mean_Chey/OdorMeanChey-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'oleo-script-bold';
-    src: url('/invitacionesDigitales/resourses/fonts/Oleo_Script_Swash_Caps/OleoScriptSwashCaps-Bold.ttf') format('truetype');
+    src: url('/resourses/fonts/Oleo_Script_Swash_Caps/OleoScriptSwashCaps-Bold.ttf') format('truetype');
 }
 @font-face {
     font-family: 'oleo-script';
-    src: url('/invitacionesDigitales/resourses/fonts/Oleo_Script_Swash_Caps/OleoScriptSwashCaps-Regular.ttf') format('truetype');
+    src: url('/resourses/fonts/Oleo_Script_Swash_Caps/OleoScriptSwashCaps-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Kunstler';
-    src: url('/invitacionesDigitales/resourses/fonts/KUNSTLER.TTF') format('truetype');
+    src: url('/resourses/fonts/KUNSTLER.TTF') format('truetype');
 }
 
 .section {
@@ -120,7 +120,7 @@ body {
 
 .content {
     position: relative;
-    background-image: url('/invitacionesDigitales/resourses/STARS.png');
+    background-image: url('/resourses/STARS.png');
     background-size: cover;
     
 }
@@ -205,4 +205,222 @@ body {
 .carrousel-item img {
     width: 250px;
     height: auto;
+}
+
+/* MODAL */
+
+.modal-image {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-image .modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.modal-image img {
+    width: 100%;
+    height: auto;
+}
+
+.modal-image .close {
+    color: #aaa;
+    float: right;
+    font-family: 'oleo-script', sans-serif;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.modal-image .close:hover,
+.modal-image .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* INFORMATION SECTION */
+
+.line {
+    margin: 25px 0;
+}
+
+.information {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    margin: 25px 50px;
+    padding: 50px 20px;
+    background-color: #474747;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+.information h3 {
+    font-family: 'montserrat', sans-serif;
+    font-size: 24px;
+    margin: 0;
+    color: #E99FBE;
+}
+
+.information h4 {
+    font-family: 'montserrat', sans-serif;
+    font-size: 15px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.information p {
+    font-family: 'montserrat', sans-serif;
+    font-size: 18px;
+    margin: 0;
+    color: #b3abae;
+    text-align: center;
+    min-width: 150px;
+    max-width: 300px;
+}
+
+.information img {
+    width: 64px;
+    height: 64px;
+}
+
+.information .circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #E99FBE;
+}
+
+.information a {
+    text-decoration: none;
+    margin: 30px 0;
+}
+
+.information a:hover {
+    text-decoration: underline;
+}
+
+.information a span {
+    color: #000000;
+    font-family: 'montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 30px;
+    border-radius: 20px;
+    background: linear-gradient(147.84deg, #dfdfdf -7.48%, #676767 12.23%, #dadada 26.44%, #ececec 78.54%, #676767 100.59%, #fff 125.99%); 
+    box-shadow: 0px 4px 4px 0 rgba(0,0,0,0.25);
+    text-decoration: underline;
+    cursor: pointer;
+    text-wrap: nowrap;
+}
+
+/* DISCOBALL */
+.discoball-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: auto;
+}
+.discoball2-info {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: auto;
+}
+
+/* BUTTON */
+.button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin: 25px 0;
+    padding: 50px 0;
+    background-color: #474747;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+/* FULL IMAGE */
+
+.image-full {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-image: url('/resourses/STARS.png');
+    background-size: cover;
+    padding: 50px 0;
+}
+
+.image-full img {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 14px 12px 12px rgba(255, 255, 255, 0.2);
+}
+
+/* FOOTER */
+
+.footer {
+    position: relative;
+    font-family: 'montserrat', sans-serif;
+    width: 100%;
+    height: auto;
+    background-color: #161616;
+    padding: 80px 0;
+    text-align: center;
+    gap: 10px;
+}
+
+.footer h3 {
+    margin: 0;
+}
+
+.footer p {
+    font-family: 'montserrat', sans-serif;
+    font-size: 14px;
+    color: #A4A4A4;
+    margin: 0;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer .btn {
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-color: #E99FBE;
+    color: #000000;
+    padding: 10px 30px;
+    font-family: 'montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 30px;
+    gap: 10px;
+
 }
