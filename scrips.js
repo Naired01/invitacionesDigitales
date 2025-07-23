@@ -29,7 +29,7 @@ carrouselItems.forEach(item => {
     item.addEventListener('click', () => {
         // get the image source from data-id attribute
         const imageId = item.getAttribute('data-id');
-        const imageSrc = `/resourses/carrousel/${imageId}.webp`;
+        const imageSrc = `/invitacionesDigitales/resources/carrousel/${imageId}.webp`;
         const modalImage = document.getElementById('modal-image');
         modalImage.src = imageSrc;
         const modal = document.getElementById('image-modal');
