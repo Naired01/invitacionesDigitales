@@ -18,36 +18,36 @@ body {
 
 @font-face {
     font-family: 'montserrat';
-    src: url('/resourses/fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+    src: url('/invitacionesDigitales/resources/fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'montserrat-semi-bold';
-    src: url('/resourses/fonts/Montserrat-SemiBold.ttf') format('truetype');
+    src: url('/invitacionesDigitales/resources/fonts/Montserrat-SemiBold.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'montaga';
-    src: url('/resourses/fonts/Montaga/Montaga-Regular.ttf') format('truetype');
+    src: url('/invitacionesDigitales/resources/fonts/Montaga/Montaga-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'odor-mean-chey';
-    src: url('/resourses/fonts/Odor_Mean_Chey/OdorMeanChey-Regular.ttf') format('truetype');
+    src: url('/invitacionesDigitales/resources/fonts/Odor_Mean_Chey/OdorMeanChey-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'oleo-script-bold';
-    src: url('/resourses/fonts/Oleo_Script_Swash_Caps/OleoScriptSwashCaps-Bold.ttf') format('truetype');
+    src: url('/invitacionesDigitales/resources/fonts/Oleo_Script_Swash_Caps/OleoScriptSwashCaps-Bold.ttf') format('truetype');
 }
 @font-face {
     font-family: 'oleo-script';
-    src: url('/resourses/fonts/Oleo_Script_Swash_Caps/OleoScriptSwashCaps-Regular.ttf') format('truetype');
+    src: url('/invitacionesDigitales/resources/fonts/Oleo_Script_Swash_Caps/OleoScriptSwashCaps-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Kunstler';
-    src: url('/resourses/fonts/KUNSTLER.TTF') format('truetype');
+    src: url('/invitacionesDigitales/resources/fonts/KUNSTLER.TTF') format('truetype');
 }
 
 .section {
@@ -120,7 +120,7 @@ body {
 
 .content {
     position: relative;
-    background-image: url('/resourses/STARS.png');
+    background-image: url('/invitacionesDigitales/resources/STARS.png');
     background-size: cover;
     
 }
@@ -369,7 +369,7 @@ body {
     justify-content: center;
     width: 100%;
     height: auto;
-    background-image: url('/resourses/STARS.png');
+    background-image: url('/invitacionesDigitales/resources/STARS.png');
     background-size: cover;
     padding: 50px 0;
 }
