@@ -40,6 +40,7 @@ body {
     font-family: 'oleo-script-bold';
     src: url('/invitacionesDigitales/resources/fonts/Oleo_Script_Swash_Caps/OleoScriptSwashCaps-Bold.ttf') format('truetype');
 }
+
 @font-face {
     font-family: 'oleo-script';
     src: url('/invitacionesDigitales/resources/fonts/Oleo_Script_Swash_Caps/OleoScriptSwashCaps-Regular.ttf') format('truetype');
@@ -122,7 +123,7 @@ body {
     position: relative;
     background-image: url('/invitacionesDigitales/resources/STARS.png');
     background-size: cover;
-    
+
 }
 
 .stars {
@@ -323,8 +324,8 @@ body {
     font-weight: 600;
     padding: 10px 30px;
     border-radius: 20px;
-    background: linear-gradient(147.84deg, #dfdfdf -7.48%, #676767 12.23%, #dadada 26.44%, #ececec 78.54%, #676767 100.59%, #fff 125.99%); 
-    box-shadow: 0px 4px 4px 0 rgba(0,0,0,0.25);
+    background: linear-gradient(147.84deg, #dfdfdf -7.48%, #676767 12.23%, #dadada 26.44%, #ececec 78.54%, #676767 100.59%, #fff 125.99%);
+    box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
     text-decoration: underline;
     cursor: pointer;
     text-wrap: nowrap;
@@ -338,6 +339,7 @@ body {
     width: 100px;
     height: auto;
 }
+
 .discoball2-info {
     position: absolute;
     bottom: 0;
@@ -423,4 +425,141 @@ body {
     border-radius: 30px;
     gap: 10px;
 
+}
+
+/* ANIMATIONS */
+
+.scale-up-center {
+    -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+.slide-top {
+    -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.slide-right {
+    -webkit-animation: slide-right .5s cubic-bezier(.25, .46, .45, .94) both;
+    animation: slide-right .5s cubic-bezier(.25, .46, .45, .94) both
+}
+
+.slide-left {
+    -webkit-animation: slide-left .5s cubic-bezier(.25, .46, .45, .94) both;
+    animation: slide-left .5s cubic-bezier(.25, .46, .45, .94) both
+}
+
+/**
+ * ----------------------------------------
+ * animation scale-up-center
+ * ----------------------------------------
+ */
+@-webkit-keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+/**
+ * ----------------------------------------
+ * animation slide-right
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-right {
+    0% {
+        -webkit-transform: translateX(-100px);
+        transform: translateX(-100px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slide-right {
+    0% {
+        -webkit-transform: translateX(-100px);
+        transform: translateX(-100px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+}
+
+/**
+ * ----------------------------------------
+ * animation slide-left
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-left {
+    0% {
+        -webkit-transform: translateX(100px);
+        transform: translateX(100px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-left {
+    0% {
+        -webkit-transform: translateX(100px);
+        transform: translateX(100px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+/**
+ * ----------------------------------------
+ * animation slide-top
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-top {
+    0% {
+        -webkit-transform: translateY(30px);
+        transform: translateY(30px);
+    }
+    
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-top {
+    0% {
+        -webkit-transform: translateY(30px);
+        transform: translateY(30px);
+    }
+    
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
 }
