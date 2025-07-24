@@ -1,6 +1,7 @@
 // Play audio
 
 const play = document.getElementById('play');
+const playText = document.getElementById('play-text');
 const pause = document.getElementById('pause');
 const audio = document.getElementById('background-music');
 let statusMussic = false;
@@ -27,6 +28,7 @@ const audioControl = () => {
 
 
 play.addEventListener('click', audioControl);
+playText.addEventListener('click', audioControl);
 pause.addEventListener('click', audioControl);
 
 // Carrousel imagen open

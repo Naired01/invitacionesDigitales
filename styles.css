@@ -60,6 +60,46 @@ body {
     max-width: 800px;
 }
 
+.down-arrow {
+    position: absolute;
+    bottom: 10vb;
+    animation: down-arrow 3s infinite;
+    transition: all 1 ease;
+}
+
+.down-arrow svg {
+    animation: glow 3s infinite;
+}
+
+@keyframes down-arrow {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes glow {
+    0% {
+        filter: drop-shadow(0 0 0 #E99FBE);
+    }
+
+    50% {
+        filter: drop-shadow(0 0 20px #E99FBE);
+    }
+
+    100% {
+        filter: drop-shadow(0 0 0 #E99FBE);
+    }
+    
+}
+
 /* TOP SECTION */
 
 .top img {
