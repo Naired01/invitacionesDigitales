@@ -62,9 +62,9 @@ body {
 
 .down-arrow {
     position: absolute;
-    bottom: 10vb;
+    bottom: 5vb;
     animation: down-arrow 3s infinite;
-    transition: all 1 ease;
+    z-index: 100;
 }
 
 .down-arrow svg {
